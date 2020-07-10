@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Conware</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_keystore">KeystoreActivity</string>
+    <string name="title_activity_keystore_list">KeystoreList</string>
+    <string name="title_activity_app_list">App List</string>
+    <string name="title_activity_key_store_key_list">Android KeyStore Keys</string>
+    <string name="title_running_apps_list">Running Apps List</string>
+    <string name="title_activity_command_exec">Command Execution</string>
+</resources>

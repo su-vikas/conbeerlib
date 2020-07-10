@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.container.conbeer">
+
+    <application>
+        <receiver
+            android:name=".utils.FakeBroadcastReceiver"
+            android:enabled="false"
+            android:exported="false"
+            android:process=":fake_receiver">
+            <intent-filter>
+                <action
+                    android:name="com.container.conbeer.intent.TEST" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>
