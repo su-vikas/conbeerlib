@@ -44,6 +44,13 @@ This library is tested only with a limited number of virtual containers and may 
 Please feel free to open an issue when you encounter such problems.
 
 
+# References
+
+1. [ANTI-PLUGIN: DON’T LET YOUR APP PLAY AS AN ANDROID PLUGIN](https://www.blackhat.com/docs/asia-17/materials/asia-17-Luo-Anti-Plugin-Don't-Let-Your-App-Play-As-An-Android-Plugin-wp.pdf) 
+2. [Android Plugin Becomes a Catastrophe to Android Ecosystem](https://dl.acm.org/doi/10.1145/3203422.3203425)
+3. [Parallel Space Traveling: A Security Analysis of App-LevelVirtualization in Android](https://dl.acm.org/doi/pdf/10.1145/3381991.3395608)
+
+
 # License
 
 This project is released under the MIT License.
