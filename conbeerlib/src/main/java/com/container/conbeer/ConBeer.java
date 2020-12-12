@@ -59,10 +59,9 @@ public class ConBeer {
         isManifest = checkManifest();
         isAppComponents = checkAppComponents();
 
-        if(isAppRuntime || isManifest || isAppComponents) {
+        if(isAppRuntime || isManifest || isAppComponents ) {
             return true;
         }
-
         return false;
     }
 
@@ -83,7 +82,7 @@ public class ConBeer {
      * 1. /proc/self/maps if any suspicious files included
      * 2. Check Environment variables
      * 3. Check Internal storage directory
-     *
+     * 4. Check StackTrace
      * @return True, if virtual container is detected.
      */
     public boolean checkAppRuntime(){
@@ -96,10 +95,12 @@ public class ConBeer {
         boolean isInternalStorageDir = checkInternalStorageDir();
         if(isInternalStorageDir){checksDetected.add(Checks.INTENAL_STORAGE_DIR);}
 
-        if(isCheckEnvironment || isCheckProcMaps || isInternalStorageDir){
+        boolean isInStackTrace = checkStackTrace();
+        if(isInStackTrace) {checksDetected.add(Checks.STACKTRACE);}
+
+        if(isCheckEnvironment || isCheckProcMaps || isInternalStorageDir || isInStackTrace){
             return true;
         }
-
         return false;
     }
 
@@ -434,13 +435,37 @@ public class ConBeer {
                 builder.append("\n");
                 builder.append(buffer);
             }
-
             return builder.toString();
-
         }catch (Exception e){
             e.printStackTrace();
         }
-
         return null;
+    }
+
+    /**
+     * Get the stacktrace for the current execution and check for the presence of blacklisted
+     * classes in the stacktrace
+     * @return True, if virtual container detected
+     */
+    private boolean checkStackTrace() {
+        if(BuildConfig.DEBUG){
+            Log.d(TAG, ">>>>>>>>>>>> STACKTRACE AT RUNTIME: START<<<<<<<<<<<<<<<<");
+        }
+        String[] blackListedClassNameList = Constants.BLACKLISTED_STACKTRACE_CLASSES;
+        boolean bRet = false;
+        StackTraceElement[] stackTraces = new Throwable().getStackTrace();
+        for (StackTraceElement stackTrace : stackTraces) {
+            final String clazzName = stackTrace.getClassName();
+            Log.d(TAG, clazzName);
+            for(String blacklistedClassName: blackListedClassNameList){
+                if(clazzName.contains(blacklistedClassName)){
+                    bRet = true;
+                }
+            }
+        }
+        if(BuildConfig.DEBUG){
+            Log.d(TAG, ">>>>>>>>>>>> STACKTRACE AT RUNTIME: DONE<<<<<<<<<<<<<<<<");
+        }
+        return bRet;
     }
 }
