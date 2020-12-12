@@ -1,10 +1,10 @@
-package com.container.conware;
+package com.suvikas.conware;
 
 import android.content.Context;
 import android.util.Log;
 
-import com.container.conbeer.ConBeer;
-import com.container.conbeer.ContainerRecon;
+import com.suvikas.conbeer.ConBeer;
+import com.suvikas.conbeer.ContainerRecon;
 
 import org.json.JSONArray;
 import org.json.JSONException;

@@ -1,4 +1,4 @@
-package com.container.conware.Activities;
+package com.suvikas.conware.Activities;
 
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
@@ -6,17 +6,14 @@ import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
-import com.container.conware.Constants;
-import com.container.conware.R;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
+import com.suvikas.conware.Constants;
+import com.suvikas.conware.R;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import android.os.Environment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;

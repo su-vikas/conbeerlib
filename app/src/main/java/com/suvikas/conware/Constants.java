@@ -1,4 +1,4 @@
-package com.container.conware;
+package com.suvikas.conware;
 
 public class Constants {
 

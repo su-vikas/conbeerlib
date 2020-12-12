@@ -4,7 +4,7 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
     defaultConfig {
-        applicationId "com.container.conware"
+        applicationId "com.container.com.suvikas.conware"
         minSdkVersion 21
         targetSdkVersion 29
         versionCode 1

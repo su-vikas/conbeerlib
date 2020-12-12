@@ -1,4 +1,4 @@
-package com.container.conware;
+package com.suvikas.conware;
 
 import android.content.ComponentName;
 import android.content.Intent;
@@ -15,13 +15,14 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.container.conbeer.utils.FakeBroadcastReceiver;
-import com.container.conware.Activities.AppListActivity;
-import com.container.conware.Activities.AttackAndOTP;
-import com.container.conware.Activities.CommandExecActivity;
-import com.container.conware.Activities.DetectContainer;
-import com.container.conware.Activities.KeystoreActivity;
-import com.container.conware.Activities.RunningAppsListActivity;
+import com.suvikas.conware.R;
+import com.suvikas.conbeer.utils.FakeBroadcastReceiver;
+import com.suvikas.conware.Activities.AppListActivity;
+import com.suvikas.conware.Activities.AttackAndOTP;
+import com.suvikas.conware.Activities.CommandExecActivity;
+import com.suvikas.conware.Activities.DetectContainer;
+import com.suvikas.conware.Activities.KeystoreActivity;
+import com.suvikas.conware.Activities.RunningAppsListActivity;
 
 
 public class MainActivity extends AppCompatActivity {

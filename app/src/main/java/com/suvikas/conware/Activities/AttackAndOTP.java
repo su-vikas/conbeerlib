@@ -1,10 +1,9 @@
-package com.container.conware.Activities;
+package com.suvikas.conware.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
-import com.container.conware.AndOTP;
-import com.container.conware.R;
+import com.suvikas.conware.AndOTP;
+import com.suvikas.conware.R;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;

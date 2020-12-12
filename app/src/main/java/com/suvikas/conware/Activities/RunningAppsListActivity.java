@@ -1,4 +1,4 @@
-package com.container.conware.Activities;
+package com.suvikas.conware.Activities;
 
 import android.app.ActivityManager;
 import android.content.Context;
@@ -20,8 +20,8 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import com.container.conware.Constants;
-import com.container.conware.R;
+import com.suvikas.conware.Constants;
+import com.suvikas.conware.R;
 
 import java.util.ArrayList;
 import java.util.List;

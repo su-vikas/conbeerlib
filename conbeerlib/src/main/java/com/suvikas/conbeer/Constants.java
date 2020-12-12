@@ -1,4 +1,4 @@
-package com.container.conbeer;
+package com.suvikas.conbeer;
 
 public class Constants {
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activities.DetectContainer">
+    tools:context="com.suvikas.conware.Activities.DetectContainer">
 
     <include
         layout="@layout/content_keystore"

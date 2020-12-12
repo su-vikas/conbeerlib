@@ -1,4 +1,4 @@
-package com.container.conbeer.utils;
+package com.suvikas.conbeer.utils;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.util.Log;
 
-import com.container.conbeer.BuildConfig;
+import com.suvikas.conbeer.BuildConfig;
 
 public class FakeBroadcastReceiver extends BroadcastReceiver {
 

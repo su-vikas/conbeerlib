@@ -1,10 +1,10 @@
-package com.container.conware.Activities;
+package com.suvikas.conware.Activities;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
 
-import com.container.conbeer.ContainerRecon;
-import com.container.conware.KeystoreUtil;
+import com.suvikas.conbeer.ContainerRecon;
+import com.suvikas.conware.KeystoreUtil;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,7 +15,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.container.conware.R;
+import com.suvikas.conware.R;
 
 import java.util.ArrayList;
 

@@ -1,8 +1,8 @@
-package com.container.conware.Activities;
+package com.suvikas.conware.Activities;
 
 import android.os.Bundle;
 
-import com.container.conware.R;
+import com.suvikas.conware.R;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;

@@ -1,4 +1,4 @@
-package com.container.conbeer;
+package com.suvikas.conbeer;
 
 import android.app.ActivityManager;
 import android.content.Context;
@@ -256,7 +256,7 @@ public class ConBeer {
      * @return True, if virtual container detected
      */
     private boolean checkInternalStorageDir(){
-        // Package Name: com.container.conware  Dir: /data/data/com.lbe.parallel.intl.arm64/parallel_intl/0/com.container.conware
+        // Package Name: com.container.com.suvikas.conware  Dir: /data/data/com.lbe.parallel.intl.arm64/parallel_intl/0/com.container.com.suvikas.conware
 
         //TODO: improve exception handling, throw or handle it here?
         if(BuildConfig.DEBUG){
@@ -280,7 +280,7 @@ public class ConBeer {
             String expectedAppDir2 = "/data/user/0/" + packageName;
 
             // generally container will have something like:
-            // "/data/data/com.lbe.parallel.intl.arm64/parallel_intl/0/com.container.conware"
+            // "/data/data/com.lbe.parallel.intl.arm64/parallel_intl/0/com.container.com.suvikas.conware"
             if(!appDir.startsWith(expectedAppDir) && !appDir.startsWith(expectedAppDir2)){
                 Log.d(TAG, "check1: " + expectedAppDir);
                 Log.d(TAG, "check2: " + expectedAppDir2);
@@ -398,7 +398,7 @@ public class ConBeer {
 
         // send message
         Intent intent = new Intent("com.container.conbeer.intent.TEST");
-        intent.setPackage("com.container.conware");
+        intent.setPackage("com.container.com.suvikas.conware");
         //LocalBroadcastManager.getInstance(this).sendBroadcast(intent);
         mContext.sendBroadcast(intent);
         try{

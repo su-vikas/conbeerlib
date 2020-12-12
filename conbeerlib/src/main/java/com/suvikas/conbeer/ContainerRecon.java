@@ -1,4 +1,4 @@
-package com.container.conbeer;
+package com.suvikas.conbeer;
 
 import android.content.Context;
 import android.content.pm.PackageInfo;
@@ -55,7 +55,7 @@ public class ContainerRecon {
      * Not to be confused with the application's directory, which is inside this container dir.
      */
     public String getContainerAppDir(){
-        // Package Name: com.container.conware  Dir: /data/data/com.lbe.parallel.intl.arm64/parallel_intl/0/com.container.conware
+        // Package Name: com.container.com.suvikas.conware  Dir: /data/data/com.lbe.parallel.intl.arm64/parallel_intl/0/com.container.com.suvikas.conware
         // TODO: parse out the package dir from this.
         String androidDataDir = "/data/data";
         String packageName = mContext.getPackageName();
